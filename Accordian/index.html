@@ -1,0 +1,50 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordian</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <div class="accordian-container">
+      <h2>According to the questions</h2>
+      <div class="accordian-item">
+        <div class="according-header" onclick="toggleAccordian(this)">
+          <h3>What is an Accordian</h3>
+        </div>
+        <div class="accordian-content">
+          <p>
+            An accordian is a graphical element that allows user to show or hide
+            the sections of the related elements.
+          </p>
+        </div>
+      </div>
+      <div class="accordian-item">
+        <div class="according-header" onclick="toggleAccordian(this)">
+          <h3>How does it work?</h3>
+        </div>
+        <div class="accordian-content">
+          <p>
+            Clicking on the header of a section expands or collpases the
+            content.
+          </p>
+        </div>
+      </div>
+      <div class="accordian-item">
+        <div class="according-header" onclick="toggleAccordian(this)">
+          <h3>Why use an accordian</h3>
+        </div>
+        <div class="accordian-content">
+          <p>
+            Accordian help in saving and organizing content in a user-friendly manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="backlog">
+            <h2>Backlog</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    Task 1 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    Task 2 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    Task 3 <a class="move-right">→</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card" id="todo">
+            <h2>Todo-list</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 4 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 5 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 6 <a class="move-right">→</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card" id="ongoing">
+            <h2>Ongoing</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 7 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 8 <a class="move-right">→</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card" id="done">
+            <h2>Done</h2>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 9 <a class="move-right">→</a>
+                </li>
+                <li class="todo-item">
+                    <a class="move-left">←</a> Task 10 <a class="move-right">→</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

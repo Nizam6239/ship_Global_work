@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.accordian-container{
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    width: 90%;
+    max-width: 600px;
+    padding:20px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007Bff;
+}
+
+.accordian-item{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.according-header{
+    background-color: #007Bff;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordian-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    color:#444;
+    background: #f1f1f1;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordian-content p{
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.accordian-active .accordian-item{
+    padding-bottom: 15px;
+    max-height: 200px;
+}
